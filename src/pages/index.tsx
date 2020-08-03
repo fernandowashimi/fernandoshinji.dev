@@ -1,11 +1,15 @@
 import React, { FC } from 'react';
-import { GlobalStyle } from '../styles/global';
+
+import Layout from '../components/Layout';
+import Section from '../components/Section';
+import LogoMouseParallax from '../components/LogoMouseParallax';
 
 const App: FC = () => (
-  <>
-    <GlobalStyle />
-    <div>Hello world!</div>
-  </>
+  <Layout>
+    <Section>
+      <LogoMouseParallax />
+    </Section>
+  </Layout>
 );
 
 export default App;
