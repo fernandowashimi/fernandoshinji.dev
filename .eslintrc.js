@@ -29,6 +29,20 @@ module.exports = {
         jsx: 'never',
       },
     ],
+    'object-curly-newline': [
+      'error',
+      {
+        ObjectExpression: 'always',
+        ObjectPattern: {
+          multiline: true,
+        },
+        ImportDeclaration: 'never',
+        ExportDeclaration: {
+          multiline: true,
+          minProperties: 3,
+        },
+      },
+    ],
     'import/no-unresolved': 0,
   },
   overrides: [
