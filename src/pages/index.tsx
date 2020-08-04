@@ -10,6 +10,18 @@ const App: FC = () => (
     <SEO title="Welcome" />
     <Section>
       <LogoMouseParallax />
+      {/* temporary */}
+      <div className="contact">
+        <span>
+          <a href="https://github.com/fernandowashimi">Github</a>
+        </span>
+        <span>
+          <a href="https://www.linkedin.com/in/fernandowashimi/">LinkedIn</a>
+        </span>
+        <span>
+          <a href="mailto:fernandowashimi@gmail.com">Email</a>
+        </span>
+      </div>
     </Section>
   </Layout>
 );

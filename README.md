@@ -4,6 +4,6 @@
   </a>
 </p>
 
-# 🚀
+# 🚀 fernandoshinji.dev
 
-[Demo](https://fshinji-website.vercel.app/)
+[Page](https://fernandoshinji.dev)

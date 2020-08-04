@@ -5,5 +5,14 @@ module.exports = {
     description: 'My personal website',
     author: 'Fernando Shinji Washimi',
   },
-  plugins: ['gatsby-plugin-styled-components', 'gatsby-plugin-react-helmet'],
+  plugins: [
+    'gatsby-plugin-styled-components',
+    'gatsby-plugin-react-helmet',
+    {
+      resolve: 'gatsby-plugin-typography',
+      options: {
+        pathToConfigModule: 'src/utils/typography.ts',
+      },
+    },
+  ],
 };

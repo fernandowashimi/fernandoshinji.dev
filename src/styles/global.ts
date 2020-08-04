@@ -14,4 +14,25 @@ export const GlobalStyle = createGlobalStyle`
     background-position: top;
     background-size: cover;
   }
+
+  .contact {
+    position: fixed;
+    bottom: 50px;
+    z-index: 1;
+
+    span {
+      margin: 0 5px;
+      font-size: 1.3em;
+
+      a {
+        color: #aaaaaa;
+        text-decoration: none;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+          color: #eeeeee;
+        }
+      }
+    }
+  }
 `;
