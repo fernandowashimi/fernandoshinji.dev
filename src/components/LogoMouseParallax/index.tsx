@@ -12,25 +12,35 @@ const trans2 = (x, y) => `translate3d(${x / 100}px, ${y / 100}px, 0)`;
 const MouseParallax: FC = () => {
   const [prop, set] = useSpring(() => ({
     xy: [0, 0],
-    config: { mass: 10, tension: 500, friction: 100 },
+    config: {
+      mass: 10,
+      tension: 500,
+      friction: 100,
+    },
   }));
 
   return (
     <LogoMouseParallaxContainer
-      onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}
+      onMouseMove={({ clientX: x, clientY: y }) => {
+        set({
+          xy: calc(x, y),
+        });
+      }}
     >
       <animated.div
-        /* @ts-ignore */
-        style={{ opacity: '.9', transform: prop.xy.interpolate(trans2) }}
-      >
-        <img src={Hexagon} width={300} alt="Hexagon" />
-      </animated.div>
+        className="parallax-item parallax-item__back"
+        style={{
+          /* @ts-ignore */
+          transform: prop.xy.interpolate(trans2),
+        }}
+      />
       <animated.div
-        /* @ts-ignore */
-        style={{ transform: prop.xy.interpolate(trans1) }}
-      >
-        <Logo />
-      </animated.div>
+        className="parallax-item parallax-item__logo"
+        style={{
+          /* @ts-ignore */
+          transform: prop.xy.interpolate(trans1),
+        }}
+      />
     </LogoMouseParallaxContainer>
   );
 };

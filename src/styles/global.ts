@@ -8,6 +8,10 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: #000000;
+    background-image: url(./background.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: top;
+    background-size: cover;
   }
 `;
