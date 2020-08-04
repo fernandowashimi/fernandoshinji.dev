@@ -31,7 +31,7 @@ const Layout: FC = ({ children }) => (
           },
           move: {
             random: true,
-            speed: 0.5,
+            speed: 1,
             direction: 'none',
             out_mode: 'out',
           },
