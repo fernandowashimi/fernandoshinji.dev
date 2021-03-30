@@ -1,9 +1,7 @@
 import axios from 'axios';
 
-const { VERCEL_URL } = process.env;
-
 const local = axios.create({
-  baseURL: VERCEL_URL,
+  baseURL: 'https://fernandoshinji.dev',
 });
 
 export async function getDefaultProfile() {
